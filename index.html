@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+        />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- main container -->
+    <div class="container">
+        <h2>Currency Converter</h2>
+
+        <!--All form container -->
+        <form>
+            <!-- Amount section -->
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input value="1" type="text">
+            </div>
+
+            <!--Drop down -->
+            <div class="dropdown">
+                
+                <!-- from -->
+                <div class="from">
+                    <p>From</p>
+
+                    <!-- select container -->
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="flag image">
+                        <select name="from"></select>
+                    </div>
+
+                </div><!-- end (from) part-->
+
+                <!--showing exchange output-->
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <!-- to -->
+                <div class="to">
+                    <p>To</p>
+
+                    <!-- select container -->
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="flag image">
+                        <select name="to"></select>
+                    </div>
+
+                </div><!-- end (to) part-->
+
+            </div><!--End of Drop down section-->
+
+            <!-- output -->
+            <div class="msg_output">1 USD = 84 INR</div>
+
+            <!--convert button-->
+            <button>Get Exchange Rate</button>
+
+        </form><!-- end all form container -->
+
+    </div><!-- end main container -->
+
+
+    <!--javascript link -->
+    <script type="module" src="app.js"></script> <!--  type="module" this use for import something in code.js file-->
+    <!--iske help se hum countryList ko app.js me access kar sakte hai-->
+</body>
+</html>
